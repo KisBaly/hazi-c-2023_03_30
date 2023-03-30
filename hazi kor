@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace oszataly_kor
+{
+    class Kor
+    {
+        public double r;
+
+        public Kor(double r0)
+        {
+            r = r0;
+        }
+
+        public double Terulet()
+        {
+            return Math.Pow(r,2)*Math.PI;
+        }
+        public double Kerulet()
+        {
+            return 2*r*Math.PI;
+        }
+
+        public double Atlo()
+        {
+            return r*2;
+        }
+
+       
+    }
+}
