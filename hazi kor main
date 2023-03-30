@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace oszataly_teglalap
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //HF UGYANEZ KORREL
+            Console.WriteLine("Adja meg a kör átlóját:");
+            double r = Convert.ToDouble(Console.ReadLine());
+            Kor kor = new Kor(r);
+            Console.WriteLine("A kör (T)erülete: "+kor.Terulet());
+            Console.WriteLine("A kör (K)erülete: " + kor.Kerulet());
+            Console.WriteLine("A kör átlóinak hossza: "+ kor.Atlo());
+            Console.ReadLine();
+        }
+    }
+}
